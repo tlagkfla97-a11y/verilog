@@ -1,0 +1,21 @@
+# Vivado auto generated files
+.cache/
+.hw/
+.runs/
+.sim/
+.ip_user_files/
+
+# Logs
+*.log
+*.jou
+*.pb
+*.wdb
+
+# Bitstream
+*.bit
+
+# Backup files
+*.backup.*
+
+# Xilinx temp
+.Xil/
