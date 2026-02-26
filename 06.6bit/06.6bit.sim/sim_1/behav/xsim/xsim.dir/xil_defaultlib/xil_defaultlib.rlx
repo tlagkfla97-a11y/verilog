@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/project/fpga/ai1/02.adder01/02.adder01.srcs/sources_1/new/full_adder.v,1770793537,verilog,,D:/project/fpga/ai1/02.adder01/02.adder01.srcs/sources_1/new/half_adder.v,,full_adder,,,,,,,,
+D:/project/fpga/ai1/02.adder01/02.adder01.srcs/sources_1/new/half_adder.v,1770798612,verilog,,D:/project/fpga/ai1/06.6bit/06.6bit.srcs/sim_1/new/tb_adder6.v,,half_adder,,,,,,,,
+D:/project/fpga/ai1/06.6bit/06.6bit.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+D:/project/fpga/ai1/06.6bit/06.6bit.srcs/sim_1/new/tb_adder6.v,1770805561,verilog,,,,tb_adder6,,,,,,,,
+D:/project/fpga/ai1/06.6bit/06.6bit.srcs/sources_1/new/adder6.v,1770805251,verilog,,D:/project/fpga/ai1/06.6bit/06.6bit.srcs/sim_1/new/tb_adder6.v,,add6_sub6,,,,,,,,

@@ -1,0 +1,10 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/project/fpga/ai1/06.up_down_counter/06.up_down_counter.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+D:/project/fpga/ai1/06.up_down_counter/06.up_down_counter.srcs/sim_1/new/tb_top.v,1771478043,verilog,,,,tb_top,,,,,,,,
+D:/project/fpga/ai1/06.up_down_counter/06.up_down_counter.srcs/sources_1/new/btn_debounce.v,1770963866,verilog,,D:/project/fpga/ai1/06.up_down_counter/06.up_down_counter.srcs/sources_1/new/control_tower.v,,btn_debouncer;debouncer,,,,,,,,
+D:/project/fpga/ai1/06.up_down_counter/06.up_down_counter.srcs/sources_1/new/control_tower.v,1771465887,verilog,,D:/project/fpga/ai1/06.up_down_counter/06.up_down_counter.srcs/sources_1/new/fnd_controller.v,,control_tower,,,,,,,,
+D:/project/fpga/ai1/06.up_down_counter/06.up_down_counter.srcs/sources_1/new/fnd_controller.v,1771469498,verilog,,D:/project/fpga/ai1/06.up_down_counter/06.up_down_counter.srcs/sources_1/new/top.v,,bin2bcd4digit;fnd_controller;fnd_digit_display;fnd_digit_select,,,,,,,,
+D:/project/fpga/ai1/06.up_down_counter/06.up_down_counter.srcs/sources_1/new/top.v,1771469397,verilog,,D:/project/fpga/ai1/06.up_down_counter/06.up_down_counter.srcs/sim_1/new/tb_top.v,,top,,,,,,,,

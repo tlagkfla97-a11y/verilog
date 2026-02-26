@@ -1,0 +1,89 @@
+`timescale 1ns / 1ps
+
+module control_tower(
+    input clk,
+    input reset, //sw[15]
+    input [2:0] btn, //btn[0]:btnL, btn[1]:btnC, btn[2]:btnR
+    input [7:0] sw,
+    output [13:0] seg_data,
+    output reg [15:0] led
+
+    );
+
+    // mode define
+    parameter UP_COUNTER = 3'b01;
+    parameter DOWN_COUNTER = 3'b10;
+    parameter SLIDE_SW_READ = 3'b11;
+
+    reg r_prev_btnL=0;
+    reg [2:0] r_mode=3'b000;
+    reg [19:0] r_counter;       // 10ms를 재기 위한 카운터 10ns * 1000000
+    reg [13:0] r_ms10_counter;    // 10ms가 될때마다 1씩 증가 9999까지(FND를 표시할수 있는수가 최대 9999까지이기 때문)
+
+    // mode check
+    always @(posedge clk, posedge reset) begin
+        if (reset) begin//리셋 버튼 눌렸을 때 초기화
+            r_mode <= 0;
+            r_prev_btnL <= 0;
+        end else begin
+            if (btn[0] && !r_prev_btnL)//엣지 검출. 지금 버튼이 눌려있고 이전에 안 눌려있었다면
+                r_mode = (r_mode== SLIDE_SW_READ) ? UP_COUNTER: r_mode + 1;//현재모드가 slide 모드라면 업카운터로 넘어가고 아니면 +1 다음 단계로 넘어가란 뜻. 1->2->3->1
+        end
+        r_prev_btnL <= btn[0];//이번 클럭에서 누른 버튼 상태를 일단 r_prev_btnL에 넣어둬라.
+    end
+
+// up counter
+always @(posedge clk, posedge reset) begin//클럭 상승 엣지.
+    if (reset) begin
+        r_counter <= 0;
+        r_ms10_counter <= 0;//10ms카운터
+    end else if (r_mode == UP_COUNTER) begin //1.add logic
+        if (r_counter == 20'd1_000_000 - 1) begin // 10ms 원래는 100MHz 1초에 1억번. 100만번은 0.01초.(10ms)
+            r_counter <= 0;
+            if(r_ms10_counter >= 9999)
+                r_ms10_counter <=0;
+            else r_ms10_counter <= r_ms10_counter+1;
+           
+           // led[13:0] <= r_ms10_counter;
+        end else begin
+            r_counter <= r_counter + 1;
+        end
+         end else if (r_mode == DOWN_COUNTER) begin //1.sub logic
+        if (r_counter == 20'd1_000_000 - 1) begin // 10ms
+            r_counter <= 0;
+            if(r_ms10_counter == 0) //0도달시 9999로 넘어간다.
+                r_ms10_counter <= 9999;
+            else r_ms10_counter <= r_ms10_counter-1;
+          // led[13:0] <= r_ms10_counter;
+        end else begin //3. SLIDE_SW_READ or IDLE mode
+            r_counter <= r_counter + 1;
+        end
+    end else begin
+        r_counter <= 0;
+        r_ms10_counter <= 0;
+    end
+
+end
+
+// led mode display
+
+always @(r_mode) begin  // r_mode가 변경 될때 실행
+    case (r_mode)
+        UP_COUNTER: begin
+            led[15:14] = UP_COUNTER;//카운터 숫자와 상관없이 가장 왼쪽 led 두개로 현재 무슨 모드인지 보여줌.
+        end
+        DOWN_COUNTER: begin
+            led[15:14] = DOWN_COUNTER;
+        end
+        SLIDE_SW_READ: begin
+            led[15:14] = SLIDE_SW_READ;
+        end
+        default:
+            led[15:14] = 3'b000;
+    endcase
+end
+
+assign seg_data = (r_mode == UP_COUNTER) ? r_ms10_counter : 
+                  (r_mode == DOWN_COUNTER) ? r_ms10_counter : sw;
+
+endmodule

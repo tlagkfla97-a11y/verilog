@@ -1,0 +1,265 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Feb 10 12:57:16 2026
+# Process ID: 6332
+# Current directory: D:/project/fpga/ai1/01.gate_test/01.gate_test.runs/synth_1
+# Command line: vivado.exe -log gatetest.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gatetest.tcl
+# Log file: D:/project/fpga/ai1/01.gate_test/01.gate_test.runs/synth_1/gatetest.vds
+# Journal file: D:/project/fpga/ai1/01.gate_test/01.gate_test.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source gatetest.tcl -notrace
+Command: synth_design -top gatetest -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16104
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1106.934 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'gatetest' [D:/project/fpga/ai1/01.gate_test/01.gate_test.srcs/sources_1/new/gatetest.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'gatetest' (1#1) [D:/project/fpga/ai1/01.gate_test/01.gate_test.srcs/sources_1/new/gatetest.v:5]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1106.934 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1106.934 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1106.934 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1106.934 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:8]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk]'. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:8]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'fnd_data[0]'. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fnd_data[1]'. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fnd_data[2]'. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fnd_data[3]'. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fnd_data[4]'. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fnd_data[5]'. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fnd_data[6]'. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fnd_data[7]'. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fnd_com[0]'. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fnd_com[1]'. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fnd_com[2]'. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'fnd_com[3]'. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rst'. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Btn_U'. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Btn_L'. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Btn_R'. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Btn_D'. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rx'. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tx'. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/vivado/class/s_sw_uart_copy1/s_sw_uart_copy1.srcs/constrs_1/imports/Desktop/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/gatetest_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/gatetest_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1136.012 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1136.012 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1136.012 ; gain = 29.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1136.012 ; gain = 29.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1136.012 ; gain = 29.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1136.012 ; gain = 29.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1136.012 ; gain = 29.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1178.531 ; gain = 71.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1178.531 ; gain = 71.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1197.605 ; gain = 90.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1202.445 ; gain = 95.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1202.445 ; gain = 95.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1202.445 ; gain = 95.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1202.445 ; gain = 95.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1202.445 ; gain = 95.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1202.445 ; gain = 95.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     5|
+|2     |IBUF |     2|
+|3     |OBUF |     5|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1202.445 ; gain = 95.512
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1202.445 ; gain = 66.434
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1202.445 ; gain = 95.512
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1215.484 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1222.422 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+15 Infos, 21 Warnings, 21 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 1222.422 ; gain = 115.488
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'D:/project/fpga/ai1/01.gate_test/01.gate_test.runs/synth_1/gatetest.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file gatetest_utilization_synth.rpt -pb gatetest_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 10 12:57:37 2026...

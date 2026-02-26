@@ -1,0 +1,7 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/project/fpga/ai1/12.shift_register/12.shift_register.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+D:/project/fpga/ai1/12.shift_register/12.shift_register.srcs/sim_1/new/tb_shift_reg.v,1772005294,verilog,,,,tb_shift_register,,,,,,,,
+D:/project/fpga/ai1/12.shift_register/12.shift_register.srcs/sources_1/new/shift_register.v,1772004874,verilog,,D:/project/fpga/ai1/12.shift_register/12.shift_register.srcs/sim_1/new/tb_shift_reg.v,,shift_register,,,,,,,,

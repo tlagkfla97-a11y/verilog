@@ -1,0 +1,10 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/project/fpga/ai1/06.up_down_counter/06.up_down_counter.srcs/sources_1/new/btn_debounce.v,1771480154,verilog,,D:/project/fpga/ai1/06.up_down_counter/06.up_down_counter.srcs/sources_1/new/fnd_controller.v,,btn_debouncer;debouncer,,,,,,,,
+D:/project/fpga/ai1/06.up_down_counter/06.up_down_counter.srcs/sources_1/new/fnd_controller.v,1771501500,verilog,,D:/project/fpga/ai1/07.min_sec_stopwatch/07.min_sec_stopwatch.srcs/sources_1/new/min_sec_control_tower.v,,bin2bcd4digit;fnd_controller;fnd_digit_display;fnd_digit_select,,,,,,,,
+D:/project/fpga/ai1/07.min_sec_stopwatch/07.min_sec_stopwatch.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+D:/project/fpga/ai1/07.min_sec_stopwatch/07.min_sec_stopwatch.srcs/sim_1/new/top_tb.v,1771494786,verilog,,,,top_tb,,,,,,,,
+D:/project/fpga/ai1/07.min_sec_stopwatch/07.min_sec_stopwatch.srcs/sources_1/new/min_sec_control_tower.v,1771501503,verilog,,D:/project/fpga/ai1/07.min_sec_stopwatch/07.min_sec_stopwatch.srcs/sources_1/new/top.v,,min_sec_control_tower,,,,,,,,
+D:/project/fpga/ai1/07.min_sec_stopwatch/07.min_sec_stopwatch.srcs/sources_1/new/top.v,1771501506,verilog,,D:/project/fpga/ai1/07.min_sec_stopwatch/07.min_sec_stopwatch.srcs/sim_1/new/top_tb.v,,top,,,,,,,,

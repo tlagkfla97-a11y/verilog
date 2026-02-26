@@ -1,0 +1,12 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/project/fpga/ai1/06.up_down_counter/06.up_down_counter.srcs/sources_1/new/btn_debounce.v,1771927075,verilog,,D:/project/fpga/ai1/10.my_coffee_machine/10.my_coffee_machine.srcs/sources_1/new/coffee_controller.v,,btn_debouncer;debouncer,,,,,,,,
+D:/project/fpga/ai1/06.up_down_counter/06.up_down_counter.srcs/sources_1/new/tick_generator.v,1771806454,verilog,,D:/project/fpga/ai1/09.coffee_machine/09.coffee_machine.srcs/sim_1/new/tb_coffee_machine.v,,tick_generator,,,,,,,,
+D:/project/fpga/ai1/09.coffee_machine/09.coffee_machine.srcs/sim_1/new/tb_coffee_machine.v,1771926893,verilog,,,,tb_coffee_machine,,,,,,,,
+D:/project/fpga/ai1/09.coffee_machine/09.coffee_machine.srcs/sources_1/new/coffee_machine.v,1771915438,verilog,,D:/project/fpga/ai1/06.up_down_counter/06.up_down_counter.srcs/sources_1/new/tick_generator.v,,coffee_machine,,,,,,,,
+D:/project/fpga/ai1/10.my_coffee_machine/10.my_coffee_machine.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+D:/project/fpga/ai1/10.my_coffee_machine/10.my_coffee_machine.srcs/sources_1/new/Coffee_top.v,1771926851,verilog,,D:/project/fpga/ai1/06.up_down_counter/06.up_down_counter.srcs/sources_1/new/btn_debounce.v,,Coffee_top,,,,,,,,
+D:/project/fpga/ai1/10.my_coffee_machine/10.my_coffee_machine.srcs/sources_1/new/coffee_controller.v,1771926077,verilog,,D:/project/fpga/ai1/10.my_coffee_machine/10.my_coffee_machine.srcs/sources_1/new/coffee_fnd_controller.v,,coffee_controller,,,,,,,,
+D:/project/fpga/ai1/10.my_coffee_machine/10.my_coffee_machine.srcs/sources_1/new/coffee_fnd_controller.v,1771915194,verilog,,D:/project/fpga/ai1/09.coffee_machine/09.coffee_machine.srcs/sources_1/new/coffee_machine.v,,bin2bcd4digit;coffee_fnd_controller;fnd_digit_display;fnd_digit_select,,,,,,,,

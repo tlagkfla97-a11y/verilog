@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/project/fpga/ai1/04.mux_decoder_encoder/04.mux_decoder_encoder.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+D:/project/fpga/ai1/04.mux_decoder_encoder/04.mux_decoder_encoder.srcs/sim_1/new/tb_decoder.v,1770792124,verilog,,,,tb_decoder,,,,,,,,
+D:/project/fpga/ai1/04.mux_decoder_encoder/04.mux_decoder_encoder.srcs/sim_1/new/tb_mux2_1.v,1770790370,verilog,,,,tb_mux2_1,,,,,,,,
+D:/project/fpga/ai1/04.mux_decoder_encoder/04.mux_decoder_encoder.srcs/sources_1/new/decoder.v,1770792960,verilog,,D:/project/fpga/ai1/04.mux_decoder_encoder/04.mux_decoder_encoder.srcs/sim_1/new/tb_decoder.v,,decoder,,,,,,,,
+D:/project/fpga/ai1/04.mux_decoder_encoder/04.mux_decoder_encoder.srcs/sources_1/new/mux.v,1770789026,verilog,,D:/project/fpga/ai1/04.mux_decoder_encoder/04.mux_decoder_encoder.srcs/sim_1/new/tb_mux2_1.v,,mux2_1,,,,,,,,
