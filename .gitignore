@@ -1,21 +1,34 @@
-# Vivado auto generated files
-.cache/
-.hw/
-.runs/
-.sim/
-.ip_user_files/
+# =====================================
+# Vivado auto-generated folders & files
+# =====================================
+02.adder01.cache/
+02.adder01.hw/
+02.adder01.runs/
+02.adder01.sim/
+02.adder01.ip_user_files/
 
-# Logs
+# Logs & backup
 *.log
 *.jou
 *.pb
 *.wdb
-
-# Bitstream
-*.bit
-
-# Backup files
 *.backup.*
+*.xpr.backup
+
+# Bitstream & synthesized outputs
+*.bit
+*.dcp
+*.rpt
+*.xdc
+*.vhd
+*.v
 
 # Xilinx temp
 .Xil/
+webtalk.jou
+webtalk.log
+
+# OS / Editor files
+*.swp
+*.DS_Store
+*.vscode/
